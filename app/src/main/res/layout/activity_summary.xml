@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="smart.tuke.sk.makac.activities.SummaryActivity"
+    android:background="#313541">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:id="@+id/imageView7"
+                android:src="@drawable/duration_clock_pink"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/duration"
+                android:id="@+id/textView"
+                android:textSize="15dp"
+                android:textColor="#08d68b"
+                android:layout_below="@+id/imageView7"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00:00"
+                android:id="@+id/duration_summary"
+                android:textSize="30dp"
+                android:phoneNumber="false"
+                android:textColor="#08d68b"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+            android:gravity="center">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="50">
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:id="@+id/imageView5"
+                    android:src="@drawable/distance_pink"
+                    android:layout_alignTop="@+id/imageView6"
+                    android:layout_toLeftOf="@+id/duration_summary"
+                    android:layout_toStartOf="@+id/duration_summary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/distance"
+                    android:id="@+id/textView2"
+                    android:textSize="15dp"
+                    android:textColor="#08d68b"
+                    android:layout_below="@+id/duration_summary"
+                    android:layout_alignLeft="@+id/distance_summary"
+                    android:layout_alignStart="@+id/distance_summary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:id="@+id/distance_summary"
+                    android:textSize="30dp"
+                    android:textColor="#08d68b"
+                    android:layout_below="@+id/textView2"
+                    android:layout_alignLeft="@+id/imageView5"
+                    android:layout_alignStart="@+id/imageView5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/km"
+                    android:id="@+id/textView4"
+                    android:textColor="#08d68b"
+                    android:layout_alignBaseline="@+id/distance_summary"
+                    android:layout_alignBottom="@+id/distance_summary"
+                    android:layout_toRightOf="@+id/distance_summary"
+                    android:layout_toEndOf="@+id/distance_summary" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="50">
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:id="@+id/imageView6"
+                    android:src="@drawable/calories_pink"
+                    android:layout_above="@+id/textView5"
+                    android:layout_toRightOf="@+id/duration_summary"
+                    android:layout_toEndOf="@+id/duration_summary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/calories"
+                    android:id="@+id/textView5"
+                    android:textSize="15dp"
+                    android:textColor="#08d68b"
+                    android:layout_above="@+id/textView6"
+                    android:layout_alignRight="@+id/imageView6"
+                    android:layout_alignEnd="@+id/imageView6" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:id="@+id/calories_summary"
+                    android:textSize="30dp"
+                    android:textColor="#08d68b"
+                    android:layout_alignBottom="@+id/textView4"
+                    android:layout_alignLeft="@+id/textView5"
+                    android:layout_alignStart="@+id/textView5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/kcal"
+                    android:id="@+id/textView7"
+                    android:textColor="#08d68b"
+                    android:layout_alignBaseline="@+id/textView6"
+                    android:layout_alignBottom="@+id/textView6"
+                    android:layout_toRightOf="@+id/textView6"
+                    android:layout_toEndOf="@+id/textView6" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:gravity="center">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/share_button"
+                    android:id="@+id/share_button"
+                    android:textColor="#fff"
+                    android:background="@drawable/button_background"
+                    android:layout_alignTop="@+id/back_button"
+                    android:layout_toRightOf="@+id/imageView7"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:onClick="sendEmail" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

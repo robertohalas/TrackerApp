@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="smart.tuke.sk.makac.activities.LoginActivity"
+    android:background="#313541">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="40">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <smart.tuke.sk.makac.other.RoundedImageView
+                            android:layout_width="125dp"
+                            android:layout_height="125dp"
+                            android:id="@+id/imageView8"
+                            android:src="@drawable/bg_photo2"
+                            android:onClick="onPhotoClicked" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/your_photo"
+                            android:id="@+id/textView3"
+                            android:textColor="#ffffff"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_weight="5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/registration_user"
+                android:id="@+id/textView8"
+                android:textColor="#08d68b"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+            android:gravity="center">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:id="@+id/name"
+                    android:layout_centerVertical="true"
+                    android:layout_alignLeft="@+id/weight"
+                    android:layout_alignStart="@+id/weight"
+                    android:hint="@string/name_row"
+                    android:drawableLeft="@drawable/ic_perm_identity"
+                    android:textColorHint="#fff"
+                    android:inputType="textPersonName"
+                    android:textColor="#08d68b"
+                    android:autoText="false"
+                    android:maxLines="1" android:singleLine="true"
+                    android:selectAllOnFocus="false"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/weight"
+                    android:layout_below="@+id/weight"
+                    android:layout_alignLeft="@+id/weight"
+                    android:layout_alignStart="@+id/weight"
+                    android:drawableLeft="@drawable/ic_accessibility"
+                    android:textColor="#08d68b"
+                    android:maxLines="1" android:singleLine="true"
+                    android:hint="@string/weight_row"
+                    android:textColorHint="#fff"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="15"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login_button"
+                android:id="@+id/login_button"
+                android:textColor="#fff"
+                android:background="@drawable/button_background"
+                android:nestedScrollingEnabled="true"
+                android:onClick="onSaveClicked"
+                android:layout_alignParentBottom="true"
+                android:layout_alignLeft="@+id/weight"
+                android:layout_alignStart="@+id/weight"
+                android:layout_alignRight="@+id/weight"
+                android:layout_alignEnd="@+id/weight" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

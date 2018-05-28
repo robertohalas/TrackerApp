@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".TrackerActivity">
+
+    <item
+        android:id="@+id/id_avatar"
+        app:showAsAction="always"
+        android:title="@string/avatar"/>
+
+    <item
+        android:id="@+id/id_database"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_database"
+        android:title="@string/database"/>
+
+    <item
+        android:id="@+id/map"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_globe"
+        android:title="@string/map"/>
+
+    <item
+        android:id="@+id/id_weather"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_sun"
+        android:title="@string/weather"/>
+
+</menu>

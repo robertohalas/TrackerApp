@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".WeatherActivity">
+
+    <item
+        android:id="@+id/id_avatar"
+        app:showAsAction="always"
+        android:title="@string/avatar"/>
+
+    <item android:id="@+id/currentLocation"
+        android:icon="@drawable/ic_action_navigation_refresh"
+        android:title="@string/update_location"
+        app:showAsAction="ifRoom" />
+
+</menu>

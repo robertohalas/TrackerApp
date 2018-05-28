@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/id_database" android:title="@string/database_title"/>
+    <item android:id="@+id/id_weather" android:title="@string/weather_title"/>
+    <item android:id="@+id/id_exit" android:title="@string/exit_title"/>
+
+</menu>
